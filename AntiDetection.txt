@@ -1,6 +1,4 @@
 Packers, crypters, and obfuscators: 
-https://github.com/ch2sh/BatchGuard/releases/tag/v1.0.0
-https://github.com/ch2sh/Jlaive
 https://appfuscator.com/
 https://freeobfuscator.com/
 https://upx.github.io/ 
