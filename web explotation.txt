@@ -56,7 +56,6 @@ This is more of a general vulnerability, when making a post request, if the webs
 --------------------------------
 
 SQL injection:
-Fuck you if you think learning this has any value at all. During my 3 months of attacking random websites not one has been vulnerable to sql injection, I've found 3-4 vulnerable to shellshock. 
 Anyway, https://raw.githubusercontent.com/valdimirfp/PayloadsAllTheThings_/d484212de98d0d783c4b37ada30d3321686e5eaf/SQL%20Injection/Intruder/SQL-Injection use that with intruder. (Or use sqlmap)
 
 -------------------------------
@@ -133,16 +132,13 @@ Possible WAF ip ban evasion payloads (for headers): https://raw.githubuserconten
 Other things:
 Use ffuf, host header injection, anything with perams, ffuf is a go to. Intruder is slow but stealthy.
 Try toying with file extensions if you can upload anything.
-Everything can be vulnerable to anything. (usernames, stored xss. emails, ssti, ssrf)
-Try finding the api, and looking through all requests that interact with it.
+Try finding the api, and looking through all requests that interact with it (and use ffuf to brute force possible methods of attack).
 Try revisting the register page after signing up.
 Try signing up with a company email.
 Try spoofing headers.
-Read all the js.
 Google dorks all the things (filetype, inurl, -text, site).
-%00 can bypass some stuff, so can ?.
-I forgor password and host headder injection are best buds. (evil site may be sent in the I forgor password email)
-Rate limiting isn't a good vulner.
+%00 can bypass some stuff, so can ?, .., ;, ..;, etc.
+Host header injection with a reset email request could possibly lead to your domain getting the reset password info. 
 Check for csrf tokens.
 Unicode all the things.
 Brute force all the headers (search for them).
@@ -152,9 +148,8 @@ Search stack overflow, github, and pastebin.ga for anything relating to the webs
 WayBackMachine all the things (robots.txt).
 Brute force dirs, many lairs, plus perams.
 Try all types of requests for all types of payloads, this can lead to things being vulnerable that wern't before.
-Check a webserver (and branching js files) for any changes. You can potentially find unreleased shit + more bugs.
+Check a webserver (and branching js files) for any changes. You can potentially find unreleased stuff + more bugs.
 IDOR, a small bug, logging things, or doing things, counting up (https://badsite.com/download/1.txt, 2.txt, etc instead of 31283.txt, 2371.txt, etc). Also weak randomnes can have the same effect. 
 Use your own site that redirects to localhost to bypass ssrf localhost scanners.
 Change trues to falses and so on.
 Look at websocket!
-Recon all the things.
