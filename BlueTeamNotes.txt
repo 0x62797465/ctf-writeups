@@ -23,6 +23,7 @@ Logs (hint: use grep and cat (and maybe /var/log/*) to find things like failed l
 
 Modify file for presistentent bash execution:
 .bashrc
+~/.zshrc
 
 Use the folowing command to find modification dates to scripts that could lead to presistence (/check if scripts have been tamperd with):
 ls -al /etc/init*
