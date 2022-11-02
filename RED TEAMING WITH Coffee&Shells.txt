@@ -1,8 +1,4 @@
-So 1337...
-
-
-
-based off MITRE ATT&CK framework...
+Based off MITRE ATT&CK framework
 
 
 
@@ -14,15 +10,15 @@ ASN scanning: this is not recommended by me, but it could be located in the same
 Wordlist Scanning: scan directoryes (ffuf), web perameters (ffuf), robots.txt, and use web crawlers. 
 
 Gather Victim Host Info:
-find emails (https://github.com/sharsil/mailcat) and employ names (google dorks). Dox all the employes (maltego) in order to possibly gain access to some accounts. Use breach directory or leakwiki.txt to find creds for victim emails.
+find emails (https://github.com/sharsil/mailcat https://hunter.io) and employ names (google dorks). Dox all the employes (maltego) in order to possibly gain access to some accounts. Use breach directory or leakwiki.txt to find creds for victim emails.
 
-Enumerate for firewalls. (https://github.com/EnableSecurity/wafw00f)
+Enumerate for (web application) firewalls. (https://github.com/EnableSecurity/wafw00f)
 
 Find physical locations.
 
-Identify employ roles.
+Identify employs roles in the company.
 
-Find business relationships.
+Find business relationships (useful for phishing attacks).
 
 Phishing:
 Service: phish over social media or something
@@ -33,27 +29,25 @@ find victim websites
 
 RESOURCE DEVELOPMENT:
 
-Register domains for phishing/exploiting/c2 (https://www.rankwatch.com/free-tools/typo-generator)
+Register domains for phishing/exploiting/c2 (https://www.rankwatch.com/free-tools/typo-generator target employes who mistype company website)
 
 Get a lot of proxies (https://proxyscrape.com/free-proxy-list)
 
 Use a lot of VPS for hosting/scanning.
 
-Use a botnet for mass phishing attacks.
-
-Compromise social media/email accounts in order to phish other employs with malware.
+Compromise social media/email accounts in order to phish other employs with malware. (https://www.breachdirectory.org/ https://intelx.io)
 
 Develop exploits for later use.
 
-Devlop malware. (I usually have one for anti virus bypasses (USE MALWARE NOTES), and than I have a cobalt strike payload)
+Devlop malware. (Basic reverse shell for manual anti virus/edr disabling)
 
-Drive-by target: I'm going to list the procedure examples, APT32 uses real articals to make a website look legit, but they'll host malicous javascript on it (browser exploits, droppers, etc). Dragonfly has compromised website to redirect traffic to exploit kits (malware 'n exploits). Threat Group-3390 took a skidie aproach and started ip logging everyone. 
+Drive-by target: I'm going to list the procedure examples, APT32 uses real articals to make a website look legit, but they'll host malicous javascript on it (browser exploits, droppers, etc). Dragonfly has compromised website to redirect traffic to exploit kits (malware 'n exploits). Threat Group-3390 started ip logging everyone. 
 
 Subdomain takover (not in ATT&CK framework): this can be used when a subdomain is pointing to a deleted service, for ex, a github page, you can make that into your github page and infect everyone visiting it with malware. I put this here because it would be useful in phishing attacks.
 
 
 
-INITAIL ACCESS (finally some 1337 hacker shit):
+INITAIL ACCESS:
 
 Phishing:
 Attachment: add malware (use malware notes)
@@ -85,7 +79,7 @@ Abuse command and scripting interpreters already existing on the target machiene
 
 Abuse scheduled tasks/jobs (SCHTASKS /CHANGE /TN "FOLDERPATH\TASKNAME" /ST HH:MM) (Example: SCHTASKS /CHANGE /TN "MyTasks\Notepad task" /ST 09:00)
 
-Use LOLbins for malware execution. (https://lolbas-project.github.io/#)
+Use LOLbins for malware execution. (https://lolbas-project.github.io/# https://github.com/LOLBAS-Project/LOLBAS)
 
 
 
@@ -118,6 +112,8 @@ Crypt/obfuscate: make your own crypter for shellcode. Use math, for example, pay
 Modify GPO using GPM (group policy managmnt)
 
 read malware notes
+
+Don't use proccess injection unless your injecting the proccess with packed stuff.
 
 
 
@@ -164,11 +160,11 @@ use arp scan in the other software folder in order to find IPs of systems on you
 
 exploit/brute force local services
 
-exploit things like zerologon
+exploit things like zerologon printnightmare etc
 
 taint shared content
 
-email other employs with an embeded image/non embeded link that will trigger responder
+email other employs with an embeded image/non embeded link that will trigger responder (\\nqwfoniqnfoiwnogji but embeded) 
 
 
 
