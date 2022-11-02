@@ -26,11 +26,13 @@ XOR 1010
 
 MOV (RAX, x) can be used to move varibles and registers into each other this is moving x into RAX
 
-cmp (RAX, 4) compares stuff
+cmp (RAX, 4) compares stuff, minuses RAX-4 and returns 0 if the result is 0.
 
-jne (5) if the cmp is false than jump to a line
+jne (5) jumps if the cmp was NOT 0, je jumps if it IS zero.
 
 call (function) calls a function
+
+jmp (5) jumps to a line
 
 Registers:
     RAX - Known as the accumulator register. Often used to store the return value of a function.
