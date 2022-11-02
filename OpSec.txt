@@ -1,0 +1,22 @@
+Rotate your ip. If this is hard to do, only do it when changing activiy, like exploiting = ip1, scanning//enum//info gathering = ip2, phishing = ip3
+Spoof your headers.
+threat analysis aims to answer the following questions:
+
+    Who is the adversary is?
+    What are the adversary’s goals?
+    What tactics, techniques, and procedures does the adversary use?
+    What critical information has the adversary obtained, if any?
+Don't let them answer any.
+
+If possible, phish using multiple domains, this would make it harder for the blue team to find IOCs.
+
+Don't let one person in your team publicly tag, contact, ping, any public social media shit, someone. This can lead to the blue team linking up all the team members.
+
+You can break opsec rules if you know the target has limited reacourses/bad firewalls/they're kinda fucking stupid.
+
+Use a normal hostname, KaliLinux, yeah that would be detected by the blue team kinda easily. 
+
+Don't be unique, your parents don't love you and your stupid as fuck. I'm joking, but don't use unique user agents and hostnames, or any unique trafic. Nmap tip: --script-args http.useragent="CUSTOM_AGENT"
+
+
+

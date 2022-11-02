@@ -1,0 +1,28 @@
+Linux:
+
+Show all conections (last one is the best):
+netstat -anu
+netstat -anop
+lsof -i
+netstat -anoptu
+
+Block ip and port:
+tcpkill host <ip> and port <port>
+
+Add a user (persistence):
+useradd <username>
+
+Change user password (presistence):
+passwd <username>
+
+Login reboot crash etc logs (good for blue team):
+last -aiF
+
+Logs (hint: use grep and cat (and maybe /var/log/*) to find things like failed login attempts):
+/var/log
+
+Modify file for presistentent bash execution:
+.bashrc
+
+Use the folowing command to find modification dates to scripts that could lead to presistence (/check if scripts have been tamperd with):
+ls -al /etc/init*

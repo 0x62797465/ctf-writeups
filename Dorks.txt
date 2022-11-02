@@ -1,0 +1,23 @@
+Find employes linkdon:
+site:"linkedin.com" companyname
+
+Find leaked directorys:
+intext:"index of /" site:companywebsite.com
+
+Or:
+|
+site:google.com | site:litarlyanythingelse.com
+
+And:
+&
+ex: site:google.com & inurl:drugs
+
+Find cool files:
+ext:(doc | pdf | xls | txt | ps | rtf | odt | sxw | psw | ppt | pps | xml | log) site:website.com
+
+Find employes:
+"employe of <company>"
+
+Search hackforums, social media, and more for data regarding a company:
+(site:facebook.com | site:twitter.com | site:instagram.com | site:youtube.com | site:github.com | site:pastebin.com | site:cracked.io | site:raidforums.com | site:breached.to | site:nulled.to | site:xss.is | site:nulled.to) "companyname"
+
