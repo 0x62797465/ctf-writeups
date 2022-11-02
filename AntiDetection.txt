@@ -1,0 +1,49 @@
+Packers, crypters, and obfuscators: 
+https://github.com/ch2sh/BatchGuard/releases/tag/v1.0.0
+https://github.com/ch2sh/Jlaive
+https://appfuscator.com/
+https://freeobfuscator.com/
+https://upx.github.io/ 
+https://github.com/trustedsec/unicorn
+
+AMSI bypass (thm notes):
+Powershell downgrade attack:
+PowerShell -Version 2
+
+Destroy AMSI:
+http://amsi.fail/
+
+Identify bad powershell strings:
+https://github.com/RythmStick/AMSITrigger
+
+Evading logging and monetering (thm notes):
+If event id 1102, 104, or 1100 is logged this can be bad, it may alert the blue team.
+
+Use your own ciphers
+
+pump files/fill them with random asm
+
+try to time out sandboxes
+
+pack all the things
+
+requeire user interaction (detect mouse movements/keys)
+
+detect wireshark, process hacker/explorer/monitor, system monitor, fiddles.
+
+check cpu number
+
+detect sound output
+
+detect internet accesss
+
+detect printers
+
+detect if it's in the target domain/AD
+
+Applocker:
+place exe in 
+C:\Windows\System32\spool\drivers\color because it's whitelisted by defualt 
+
+Bypass MOTW:
+https://github.com/mgeeky/PackMyPayload
