@@ -1,5 +1,5 @@
-## Intitial Analysis
-Once we open the binary in ida, we're imidiatly at main, so we wont have to find the entry point, we also see things such as "?cout@std@@3V?\$basic_ostream@DU?$char_traits@D@std@@@1@A" which mean this is probably C++.
+## Initial Analysis
+Once we open the binary in ida, we're immediately at main, so we wont have to find the entry point, we also see things such as "?cout@std@@3V?\$basic_ostream@DU?$char_traits@D@std@@@1@A" which mean this is probably C++.
 ### The function itself:
 ```assembly
 sub     rsp, 48h
@@ -29,7 +29,7 @@ call    sub_140001740
 lea     rcx, [rsp+48h+var_28]
 mov     rax, 0FFFFFFFFFFFFFFFFh
 ```
-At first this may look like a lot, but it's really not. Ida has automaticly demangled the calls for us, so we can see that the program is just setting the console title, printing a bunch of things using cout, and taking input via cin.
+At first this may look like a lot, but it's really not. Ida has automatically demangled the calls for us, so we can see that the program is just setting the console title, printing a bunch of things using cout, and taking input via cin.
 The most important thing we can take away from this is:
 ```assembly
 lea     r8, [rsp+48h+var_28]]
@@ -87,7 +87,7 @@ do {
     var++;
 } while (count <= 8)
 ```
-What we need to do is find an input that starts with A (because we know input[0] == 'A'), and increaments the next char by one 7 more times (because we know the strlen is 8).
+What we need to do is find an input that starts with A (because we know input[0] == 'A'), and increments the next char by one 7 more times (because we know the strlen is 8).
 Here I've made some code to produce an input for me:
 ```c
 #include <stdio.h>
@@ -105,4 +105,4 @@ int main () {
 }
 ```
 The output is… drumroll please… "ABCDEFGH"
-Thanks for reading my overexplained solution to this very simple crackme :D
+Thanks for reading my over explained solution to this very simple crackme :D
