@@ -186,7 +186,7 @@ int main () {
 }
 ```
 
-### Finally, the complete working code (added \#include and var decleration):
+### Finally, the complete working code (added \#include and var declaration):
 ```c
 #include <stdio.h>
 int checkPass(char var[]){
@@ -236,7 +236,7 @@ Well, it seems to be, anything starting with s with any character besides u behi
 While the intended password may have been "sudo0x18", s* (wildcard) works.
 
 ### But why?
-There's two whys, why did the author make this mistake and why does s+anything work?
+There are two whys, why did the author make this mistake and why does s+anything work?
 ### First: 
 The author doesn't seem to be that experienced in coding, first off, they forgot to add the newline char, which I thought was a disassembler bug at first, but nope, it (the program) actually prints:
 ```Welcome to Easy Crack MeWhat is the Secret ?```
@@ -264,7 +264,7 @@ cmp     al, 75h ; 'u'       ; al-'u' without storing the result
 jnz     short loc_11D3      ; if the zero flag is not set, jump to the return function
 ```
 
-If eax != u, it returns, but they don't zero out eax before returning, so if the user inputed sw, w would get compared with u, fail, and return 'w'. But if the input is just "s", it would get compared, fail, and since there's a null terminator in the eax register, it returns 0.
+If eax != u, it returns, but they don't zero out eax before returning, so if the user input is sw, w would get compared with u, fail, and return 'w'. But if the input is just "s", it would get compared, fail, and since there's a null terminator in the eax register, it returns 0.
 So the semi-correct decompilation would be:
 ```c
 char bob;
