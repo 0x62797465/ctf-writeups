@@ -1,5 +1,5 @@
 ## Initial analysis:
-It looks to be, not packed, and coded in c
+It looks to be, not packed, and coded in c  
 Here's the main disassembly with my comments:
 ```assembly
 push    rbp
@@ -55,7 +55,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
   return 0;
 }
 ```
-The first for loop is taking in 9 chars (note: a char will be inputted like this " s" not this "s") and placing them into v6.
+The first for loop is taking in 9 chars (note: a char will be inputted like this " s" not this "s") and placing them into v6.  
 The next while loop is moving the chars around, here's what it's doing (v5 is the output, v6 is the input):
 ```c
 v5[0] = v6[3];
@@ -93,8 +93,8 @@ int main () {
   printf("%s", v5);
 }
 ```
-The input being 0123456789, would make an output of 7890123456
-So what it does is it moves the last 3 chars to the start, so in order to reverse it we move the first 3 chars to the end.
-So bpfajgobiw reversed is: ajgobiwbpf
-Is that an input that'd work? Nope!! We still need to add spaces before each char due to how scanf is used, so our real, working, input will be:
+The input being 0123456789, would make an output of 7890123456  
+So what it does is it moves the last 3 chars to the start, so in order to reverse it we move the first 3 chars to the end.  
+So bpfajgobiw reversed is: ajgobiwbpf  
+Is that an input that'd work? Nope!! We still need to add spaces before each char due to how scanf is used, so our real, working, input will be:  
  a j g o b i w b p f
