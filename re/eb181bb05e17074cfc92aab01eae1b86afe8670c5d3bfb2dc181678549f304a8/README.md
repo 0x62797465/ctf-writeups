@@ -25,7 +25,7 @@ After:\
 Now let's see if our implementation worked:\
 ![image](https://github.com/Boberttt/notes/assets/104478197/af3fb83c-1d48-4f1f-b2ed-e8175cbc90f1)
 
-## Overall, this was pretty easy:\
+## Overall, this was pretty easy:
 50s - opening and loading the binary\
 3min - analyzing and patching the binary\
 13mins - trying to make my VM not crash the binary, fail, and run it in triage instead\
