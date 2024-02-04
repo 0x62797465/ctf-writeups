@@ -9,14 +9,14 @@ Well, how shall we approach this? As I said before, many strings are unobfuscate
 ![image](https://github.com/Boberttt/notes/assets/104478197/3eecac94-b705-4f50-a3ab-6a8510321645)
 
 ## Main
-As seen in the previos picture, it's pretty simple (in high level IL at least). Our objective is to patch it so that we always win, there's three+ ways we can do this:\
+As seen in the previos picture, it's pretty simple (in high level IL at least). Our objective is to patch it so that we always win, there's three+ ways we can do this:
 1. Patch the game victory to always happen
 2. Modify registers so the if condition is always triggered for the game victory
 3. Path the game so that the loss will never happen
 
 Let's go with three:\
 Before:\
-![image](https://github.com/Boberttt/notes/assets/104478197/0b62318a-bbb5-445f-ad8f-ba097b6905c3)
+![image](https://github.com/Boberttt/notes/assets/104478197/0b62318a-bbb5-445f-ad8f-ba097b6905c3)\
 During:\
 ![image](https://github.com/Boberttt/notes/assets/104478197/2c33ad2d-357b-435e-bd4a-28480c8037dc)
 After:\
