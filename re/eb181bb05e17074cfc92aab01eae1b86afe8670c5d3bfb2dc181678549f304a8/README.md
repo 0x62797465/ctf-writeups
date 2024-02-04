@@ -18,7 +18,7 @@ Let's go with three:\
 Before:\
 ![image](https://github.com/Boberttt/notes/assets/104478197/0b62318a-bbb5-445f-ad8f-ba097b6905c3)\
 During:\
-![image](https://github.com/Boberttt/notes/assets/104478197/2c33ad2d-357b-435e-bd4a-28480c8037dc)
+![image](https://github.com/Boberttt/notes/assets/104478197/2c33ad2d-357b-435e-bd4a-28480c8037dc)\
 After:\
 ![image](https://github.com/Boberttt/notes/assets/104478197/a5772593-cae0-4f24-958a-dd54bd2f0032)
 
