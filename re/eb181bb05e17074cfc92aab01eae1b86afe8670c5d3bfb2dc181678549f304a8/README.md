@@ -2,7 +2,7 @@
 .exe, so it's for Windows (obviosly). DIE says it's C/C++. It does not look packed due to important strings being unobfuscated.
 Let's find main, from our first look we can't find much:\
 ![image](https://github.com/Boberttt/notes/assets/104478197/302f2dfb-9247-45c5-b979-3e1ba44d5c5f)\
-![image](https://github.com/Boberttt/notes/assets/104478197/0ebd5a70-3422-455e-90ba-bb681cf4cda1)\
+![image](https://github.com/Boberttt/notes/assets/104478197/0ebd5a70-3422-455e-90ba-bb681cf4cda1)
 ![image](https://github.com/Boberttt/notes/assets/104478197/b3f0d319-5b3f-4811-9bfd-4f47bf73305f)\
 
 Well, how shall we approach this? As I said before, many strings are unobfuscated, so it's as simple as going to the strings tab, finding an interesting string, and looking for cross references:\
