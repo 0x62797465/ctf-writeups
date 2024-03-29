@@ -3,7 +3,7 @@ Due to https://ctf.texsaw2024.com/ going down, I do not have the original file, 
 
 # The crackme's background
 ![image](https://github.com/Boberttt/notes/assets/104478197/7ab34977-6344-4412-b1ba-b12bddaccbd3)\
-In the past, I've seen Christopher Domas's work. I could tell from the challenge name it was going to be Christopher Domas related because of this awesome project he made: https://github.com/xoreaxeaxeax/REpsych. But I did not expect it to be movfuscated (pick a better name devs!)\
+In the past, I've seen Christopher Domas's work. I could tell from the challenge name it was going to be Christopher Domas related because of this awesome project he made: https://github.com/xoreaxeaxeax/REpsych. But I did not expect it to be movfuscated (pick a better name devs! Edit: after reading the official writeup I realized it was a hint, lol)\
 For those who do not know, x86 mov is Turing complete. This means that, only using the mov instruction, you can remake any program. Christopher's role in this was making a mov compiler: https://github.com/xoreaxeaxeax/movfuscator
 
 # Initial analysis
