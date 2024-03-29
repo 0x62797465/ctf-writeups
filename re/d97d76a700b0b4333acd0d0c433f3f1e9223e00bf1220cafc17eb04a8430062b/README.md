@@ -23,7 +23,7 @@ Does it have malware? Does it upload my binary to some random website? I don't k
 After A LOT of trial and error, I finally found out how to obtain the flag:
 1. I dumped the decompilation:
 ![image](https://github.com/Boberttt/notes/assets/104478197/d647a183-b187-4caf-957c-8d57b8f0016a)
-2. I ran a diff checker against the sub functions, the only difference is the address it calls, the function name, and most importantly: the value written (THOSE LOOK LIKE CHAR VALUES!):
+2. I ran a diff checker against the sub functions, the only difference is the written address, the function name, and most importantly: the value written (THOSE LOOK LIKE CHAR VALUES!):
 ![image](https://github.com/Boberttt/notes/assets/104478197/9cc14bfa-0a50-4eb9-90c9-8aa7144d9bbd)
 2.5. While debugging, make all exceptions pass to app (movfuscated binaries need exceptions in order to work):
 ![image](https://github.com/Boberttt/notes/assets/104478197/8ed72b20-3cfd-4236-a859-cd9da86cb3e8)
