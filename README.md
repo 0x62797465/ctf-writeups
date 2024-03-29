@@ -1,5 +1,5 @@
 # notes
-My own cool awesome notes I made
+My own cool awesome notes I made (when I was 12, to be clear I did not upload these when I was 12)
 
 Half of this is sleep deprived ranting don't read this if you value your time.
 
