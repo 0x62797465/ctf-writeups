@@ -1,7 +1,7 @@
 # Background
 UMDCTF challenge, very hard in theory, only 9 people solved in the end. But... there was a  :cheese:
 ## Triage
-(Rank_strings broke as of python3.12 being brought to arch). It's coded in C, no packer, requires you to connect to a server and enter your solution in order to get the flag. 
+(Rank_strings broke as of python3.12 being brought to arch). It's coded in C, no packer, seems to read a bunch of floats in order to help you get the flag, requires you to connect to a server and enter your solution in order to get the flag. 
 ## RANDOM BULLSHIT GO!
 When you interact with the program, it keeps taking in input via stdin, so, I thought, what if I press CTRL-D? Well, this: \
 ![image](https://github.com/Boberttt/notes/assets/104478197/65fc5368-9b66-4f0c-9452-3993c3bca9d0)
