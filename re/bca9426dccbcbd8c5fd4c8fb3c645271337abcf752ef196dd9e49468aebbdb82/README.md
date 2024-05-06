@@ -11,8 +11,8 @@ In the mystery sub, the code appears to be xoring what will be executed after a 
 ![image](https://github.com/Boberttt/notes/assets/104478197/36e70aa8-eff1-43ff-97b6-bdced49693ef)\
 Armed with this information, we can start using dynamic analysis
 # Dynamic Analysis
-First we set a breakpoint before the unpack loop, run the program, hit the breakpoint, continue the code, wait for it to crash, and hit the back button (leading us back to the breakpoint and the unpacked code).
-<1.png>
+First we set a breakpoint before the unpack loop, run the program, hit the breakpoint, continue the code, wait for it to crash, and hit the back button (leading us back to the breakpoint and the unpacked code).\
+![1](https://github.com/Boberttt/notes/assets/104478197/445a1786-c57e-4d9e-9622-d27980fbe963)\
 The most important part of the unpacked code is:
 ```asm
 .text:000000000040123B loc_40123B:                             ; DATA XREF: sub_401210:loc_401222↑o
