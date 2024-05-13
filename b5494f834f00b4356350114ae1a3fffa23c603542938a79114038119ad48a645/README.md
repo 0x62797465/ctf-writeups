@@ -4,7 +4,7 @@ Jersey CTF challenge. Not really rev, more similar to misc.
 Godot binary, encrypted with some key.
 # Finding the key
 Using Google, I found this repo: https://github.com/char-ptr/gdke, when running it against the binary I got the key: bef8ffb43925db1a302c19645b8241cb51ba9032134e07ceb37ab5abeacc71c. This is hex encoded, and if you counted the chars (for some reason), it's *odd*. For people who are unfamiliar with hex, in order for it to be able to be decoded, you need an even amount of chars (if you have no separator, which in this case, we did have none). Looking into the source code for the key extractor repo, we find these signatures:
-```
+```rust
 const SIGS: [&str; 5] = [
     // call into open_and_parse
     "E8 ? ? ? ? 85 C0 0F 84 ?  ?  ? ? 49 8B 8C 24 ?  ?  ?  ?", // 4.x (4.2.1)
