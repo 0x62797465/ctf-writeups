@@ -3,7 +3,7 @@ Jersey CTF challenge. Not really rev, more similar to misc.
 # Initial analysis
 Godot binary, encrypted with some key.
 # Finding the key
-Using Google, I found this repo: https://github.com/char-ptr/gdke, when running it against the binary I got the key: bef8ffb43925db1a302c19645b8241cb51ba9032134e07ceb37ab5abeacc71c. This is hex encoded, and if you counted the chars (for some reason), it's *odd*. For people who are unfimiliar with hex, in order for it to be able to be decoded, you need an even amount of chars (if you have no seperator, which in this case, we did have none). Looking into the source code for the key extractor repo, we find these signatures:
+Using Google, I found this repo: https://github.com/char-ptr/gdke, when running it against the binary I got the key: bef8ffb43925db1a302c19645b8241cb51ba9032134e07ceb37ab5abeacc71c. This is hex encoded, and if you counted the chars (for some reason), it's *odd*. For people who are unfamiliar with hex, in order for it to be able to be decoded, you need an even amount of chars (if you have no separator, which in this case, we did have none). Looking into the source code for the key extractor repo, we find these signatures:
 ```
 const SIGS: [&str; 5] = [
     // call into open_and_parse
@@ -39,7 +39,7 @@ In Binary Ninja we can search for the string "E8 8C A6 2A 00 85 C0 0F 84 8F 01 0
 If we open this IDA, set a breakpoint at 0x142182d7f, and run the binary, we can find a pointer to the key in r15:\
 ![image](https://github.com/Boberttt/ctf-writeups/assets/104478197/08d590ee-c29f-47c4-ab96-4ba9b81d945f)\
 So finally we get: BEF8FFB43925DB1A302C19645B8241CB51BA90032134E07CEB37AB5ABEACC71C\
-What was the bug in the key extractor function? Well for bytes that start with 0 are not padded, so 03h would show up as 3. Fixxed in this commit: https://github.com/char-ptr/gdke/commit/f33c8dbf43ee594b96d886323185a008d0c533a6
+What was the bug in the key extractor function? Well, for bytes that start with 0 are not padded, so 03h would show up as 3. Fixed in this commit: https://github.com/char-ptr/gdke/commit/f33c8dbf43ee594b96d886323185a008d0c533a6
 # Finding the flag
 Using https://github.com/bruvzg/gdsdecomp we can dump the project, and using the godot engine editor (godot with -e), we can view the entire game:\
 ![image](https://github.com/Boberttt/ctf-writeups/assets/104478197/8f9df1da-cab3-4a58-bd6b-0cdd7fe8d656)
