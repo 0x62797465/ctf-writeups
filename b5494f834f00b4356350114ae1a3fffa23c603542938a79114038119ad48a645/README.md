@@ -34,7 +34,7 @@ We get the output:
 0x218217f:$hex_string: E8 8C A6 2A 00 85 C0 0F 84 8F 01 00 00 49 8B 8C 24 68 01 00 00
 ```
 In Binary Ninja we can search for the string "E8 8C A6 2A 00 85 C0 0F 84 8F 01 00 00 49 8B 8C 24 68 01 00 00", and we find it's a function call located at 0x142182d7f:\
-![image](https://github.com/Boberttt/ctf-writeups/assets/104478197/e7f2a497-f916-4481-960e-2271316b1fd7)\
+![image](https://github.com/Boberttt/ctf-writeups/assets/104478197/e7f2a497-f916-4481-960e-2271316b1fd7)
 ### Finding the key (for real now)
 If we open this IDA, set a breakpoint at 0x142182d7f, and run the binary, we can find a pointer to the key in r15:\
 ![image](https://github.com/Boberttt/ctf-writeups/assets/104478197/08d590ee-c29f-47c4-ab96-4ba9b81d945f)\
