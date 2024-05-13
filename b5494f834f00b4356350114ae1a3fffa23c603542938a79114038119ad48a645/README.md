@@ -1,5 +1,5 @@
 # Background
-Jersey CTF challenge. Not really rev, more similar to misc. 
+San Diego CTF 2024 CTF challenge. Not really rev, more similar to misc. 
 # Initial analysis
 Godot binary, encrypted with some key.
 # Finding the key
