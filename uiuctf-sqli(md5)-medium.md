@@ -1,5 +1,5 @@
 # First looks
-When pressing the "I'm a Passenger" button, we get this alert: ```
+When pressing the "I'm a Passenger" button, we get this alert: 
 ```
 Sorry passenger, only conductors are allowed right now. Please sign your own tickets.  
 hashed _RòsÜxÉÄÅ´\ä secret: a_boring_passenger_signing_key_?
