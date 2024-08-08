@@ -1,1 +1,2 @@
-Each directory is a hash of the crackme, the README.md is the solution for each hash.
+# Archived 
+You can now find all of my writeups at https://recaptcha.team
